@@ -1,24 +1,23 @@
-# grunt-assets-versioning [![Build Status](https://travis-ci.org/theasta/grunt-assets-versioning.svg?branch=master)](https://travis-ci.org/theasta/grunt-assets-versioning) [![NPM version](https://badge.fury.io/js/grunt-assets-versioning.svg)](http://badge.fury.io/js/grunt-assets-versioning)
-[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/theasta/grunt-assets-versioning?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+# grunt-assets-versioning [![Build Status](https://travis-ci.org/mfettig/grunt-assets-versioning.svg?branch=master)](https://travis-ci.org/mfettig/grunt-assets-versioning) [![NPM version](https://badge.fury.io/js/grunt-assets-versioning.svg)](http://badge.fury.io/js/grunt-assets-versioning)
 
 > Versioning static assets with Grunt
-
-## Getting Started
-This plugin requires Grunt `~0.4.1`
-
-If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 IMPORTANT: This package has been customized for a specific use case allowing association to Uglify tasks that did not
 generate minified files without error. This is not intended for general usage.
 
+## Getting Started
+This plugin requires Grunt `^1.3.0`
+
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
+
 ```shell
-npm install grunt-assets-versioning --save-dev
+npm install @mfettig/grunt-assets-versioning --save-dev
 ```
 
 One the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
 ```js
-grunt.loadNpmTasks('grunt-assets-versioning');
+grunt.loadNpmTasks('@mfettig/grunt-assets-versioning');
 ```
 
 ## The "assets_versioning" task
