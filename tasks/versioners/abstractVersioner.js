@@ -237,9 +237,8 @@ AbstractVersioner.prototype.createPreVersioningSurrogateTask = function (task) {
   }.bind(this));
 
   if (filesMapSkipCount === filesMapLength) {
+    // check if this task is allowed to skip empty definitions
     if (!this.options.skipEmpty) {
-      // this task is allowed to skip empty definitions, return an empty string to be discarded later
-
       grunt.fail.warn("File configuration for Task '" + task.taskName + "' is incorrect. Missing valid source files and/or destination files!");
     }
   }
@@ -255,6 +254,12 @@ AbstractVersioner.prototype.createPreVersioningSurrogateTask = function (task) {
  */
 AbstractVersioner.prototype.saveVersionsMap = function () {
   if (this.options.post) { return; }
+
+  // do not allow writing empty versionMaps
+  if (this.versionsMap.length === 0) {
+    return;
+  }
+
   if (typeof this.options.versionsMapFile === "string") {
     var versionsMapContent;
 
