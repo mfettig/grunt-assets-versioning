@@ -1,7 +1,7 @@
 {
   "name": "@mfettig/grunt-assets-versioning",
   "description": "Versioning static assets with Grunt",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "homepage": "https://github.com/mfettig/grunt-assets-versioning",
   "author": "Mark Fettig",
   "repository": {
