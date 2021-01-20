@@ -1,7 +1,7 @@
 {
   "name": "@mfettig/grunt-assets-versioning",
   "description": "Versioning static assets with Grunt",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "homepage": "https://github.com/mfettig/grunt-assets-versioning",
   "author": "Mark Fettig",
   "repository": {
@@ -25,7 +25,7 @@
     "test": "grunt test"
   },
   "devDependencies": {
-    "grunt": "~0.4.1",
+    "grunt": "^1.3.0",
     "grunt-contrib-clean": "~0.4.1",
     "grunt-contrib-concat": "~0.2.0",
     "grunt-contrib-jshint": "~0.1.1",
@@ -34,14 +34,14 @@
     "mock-fs": "^2.3.1"
   },
   "peerDependencies": {
-    "grunt": ">=0.4.0"
+    "grunt": "^1.3.0"
   },
   "keywords": [
     "gruntplugin"
   ],
   "dependencies": {
-    "lodash": "^2.4.1",
-    "moment": "^2.9.0",
-    "slash": "^1.0.0"
+    "lodash": "^4.17.20",
+    "moment": "^2.29.1",
+    "slash": "^3.0.0"
   }
 }
